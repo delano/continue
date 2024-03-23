@@ -6,7 +6,7 @@ const esbuildConfig = {
   entryPoints: ["src/extension.ts"],
   bundle: true,
   outfile: "out/extension.js",
-  external: ["vscode", "esbuild"],
+  external: ["vscode", "esbuild", "./xhr-sync-worker.js"], // Add "./xhr-sync-worker.js" here
   format: "cjs",
   platform: "node",
   sourcemap: true,
@@ -20,6 +20,7 @@ const esbuildConfig = {
   inject: ["./importMetaUrl.js"],
   define: { "import.meta.url": "importMetaUrl" },
 };
+
 
 (async () => {
   // Bundles the extension into one file

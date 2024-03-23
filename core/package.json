@@ -55,6 +55,7 @@
     "tree-sitter-wasms": "^0.1.6",
     "uuid": "^9.0.1",
     "vectordb": "^0.4.12",
+    "tree-sitter-vue": "",
     "web-tree-sitter": "^0.21.0"
   },
   "puppeteer": {
