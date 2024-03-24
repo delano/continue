@@ -20,6 +20,8 @@ import TerminalContextProvider from "./TerminalContextProvider";
 import LocalsProvider from "./LocalsProvider";
 import URLContextProvider from "./URLContextProvider";
 import GitLabMergeRequestContextProvider from "./GitLabMergeRequestContextProvider";
+import CodeHighlightsContextProvider from "./CodeHighlightsContextProvider";
+import CodeOutlineContextProvider from "./CodeOutlineContextProvider";
 
 const Providers: (typeof BaseContextProvider)[] = [
   DiffContextProvider,
@@ -38,8 +40,8 @@ const Providers: (typeof BaseContextProvider)[] = [
   FolderContextProvider,
   DocsContextProvider,
   GitLabMergeRequestContextProvider,
-  // CodeHighlightsContextProvider,
-  // CodeOutlineContextProvider,
+  CodeHighlightsContextProvider,
+  CodeOutlineContextProvider,
   JiraIssuesContextProvider,
   PostgresContextProvider,
   DatabaseContextProvider,
